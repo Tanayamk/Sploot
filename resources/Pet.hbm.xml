@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.mycompany.splootproject.pojo.Pet" table="pet">
+        <id name="petid" column="petid" type="long">
+            <generator class="native" />
+        </id>
+        <property name="petname" column="petname" type="string" />
+        <property name="owneremail" column="owneremail" type="string" />
+        <property name="aboutpet" column="aboutpet" type="string" />
+        <property name="breed" column="breed" type="string" />
+        <property name="medicalstatus" column="medicalstatus" type="string" />
+        <property name="servicesavailed" column="servicesavailed" type="string" />
+        <property name="photo1" column="photo1" type="string" />
+        <property name="photo2" column="photo2" type="string" />
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.mycompany.splootproject.pojo.Appointments" table="appointments">
+        <id name="appointid" column="appointid" type="long">
+            <generator class="native" />
+        </id>
+        <property name="atype" column="atype" type="string" />
+        <property name="petname" column="petname" type="string" />
+        <property name="custemail" column="custemail" type="string" />
+        <property name="bizname" column="bizname" type="string" />
+        <property name="bizemail" column="bizemail" type="string" />
+        <property name="closingstatus" column="closingstatus" type="string" />
+        <property name="city" column="city" type="string" />
+        <property name="custreviews" column="custreviews" type="string" />
+        <property name="reqdate" column="reqdate" type= "date" />
+        <property name="appointdate" column="appointdate" type="date" />
+        <property name="closingdate" column="closingdate" type="date" />
+        
+        
+    </class>
+</hibernate-mapping>

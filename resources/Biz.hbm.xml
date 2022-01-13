@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.mycompany.splootproject.pojo.Biz" table="biz">
+        <id name="bizid" column="bizid" type="long">
+            <generator class="native" />
+        </id>
+        <property name="bizname" column="bizname" type="string" />
+        <property name="owneremail" column="owneremail" type="string" />
+        <property name="btype" column="btype" type="string" />
+        <property name="city" column="city" type="string" />
+        <property name="rating" column="rating" type="int" />        
+        <property name="aboutbiz" column="aboutbiz" type="string" />
+        <property name="profilephoto1" column="profilephoto1" type="string" />
+        <property name="profilephoto2" column="profilephoto2" type="string" />
+        
+        
+    </class>
+</hibernate-mapping>
